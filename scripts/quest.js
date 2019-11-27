@@ -186,7 +186,7 @@ var quest = {
             }
             
             // We set the timeout to move again
-            window.setTimeout(this.move.bind(this), this.speed / 10);
+            window.setTimeout(this.move.bind(this), this.speed);
                     
             // We decrement the potion use countdown
             if(this.potionUseCountdown > 0){
