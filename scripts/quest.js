@@ -102,7 +102,7 @@ var quest = {
         potions.updateOnPage();
         
         // Set a timeout for the next quest movement
-        window.setTimeout(this.move.bind(this), this.speed);
+        window.setTimeout(this.move.bind(this), this.speed / 10);
     },
     
     updateOnPage : function(){
