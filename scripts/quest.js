@@ -102,7 +102,7 @@ var quest = {
         potions.updateOnPage();
         
         // Set a timeout for the next quest movement
-        window.setTimeout(this.move.bind(this), this.speed / 10);
+        window.setTimeout(this.move.bind(this), this.speed);
     },
     
     updateOnPage : function(){
@@ -186,7 +186,7 @@ var quest = {
             }
             
             // We set the timeout to move again
-            window.setTimeout(this.move.bind(this), this.speed);
+            window.setTimeout(this.move.bind(this), this.speed / 10);
                     
             // We decrement the potion use countdown
             if(this.potionUseCountdown > 0){
