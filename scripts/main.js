@@ -50,8 +50,8 @@ var main = {
 		
                         
         // First actions
-        window.setInterval(this.oneTenthSecInterval.bind(this), 100);
-        window.setInterval(this.secInterval.bind(this), 1000);
+        window.setInterval(this.oneTenthSecInterval.bind(this), 10);
+        window.setInterval(this.secInterval.bind(this), 100);
 		cookie.cookiehandler = window.setInterval(cookie.autoSave, 1000);
     },
     
